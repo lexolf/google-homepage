@@ -7,7 +7,7 @@
     </head>
     <body>
         <div class="container" style="display: grid;">
-            <div class="navbar-top">
+            <div id="navbar-top">
                 <ul style="display: flex; list-style-type: none; float: right;">
                     <li>Gmail</li>
                     <li>Images</li>
@@ -15,25 +15,38 @@
                     <li>{avatar}</li>
                 </ul>
             </div>
-            <div class="main-content">
-                <div class="logo-container">
+            <div id="main-content">
+                <div id="logo-container">
                     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="272" height="92" alt="Google">
                 </div>
-                <div class="search-bar">
-                    
-                </div>
-                <div class="search-buttons">
-
-                </div>
-                <div class="region-suggestion">
-
+                <form id="search-bar-form">
+                    <div id="search-bar">
+                        <input id="search-query-field">
+                    </div>
+                    <div id="buttons">
+                        <button>Google Search</button>
+                        <button>I'm Feeling Lucky</button>
+                    </div>
+                </form>
+                <div id="region-suggestion">
+                    Google offered in: <a href="#">русский</a>
                 </div>
             </div>
-            <div class="country-bar">
-
+            <div id="country-bar" >
+                Russia
             </div>
-            <div class="navbar-bottom" style="display: flex;">
-            
+            <div id="navbar-bottom" style="display: flex;">
+                <ul id="left-navbar-bottom" style="display: flex; list-style-type: none; float: right;">
+                    <li>Advertising</li>
+                    <li>Business</li>
+                    <li>About</li>
+                    <li>How Search Works</li>
+                </ul>
+                <ul id="right-navbar-bottom" style="display: flex; list-style-type: none; float: right;">
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                    <li>Settings</li>
+                </ul>
             </div>
         </div>
     </body>
