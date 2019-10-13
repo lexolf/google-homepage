@@ -2,6 +2,7 @@ html {
     font-family: Arial, sans-serif;
     font-size: 13px;
     height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -62,12 +63,18 @@ body {
 }
 
 #logo-container {
-    margin-top: 89px;
+    margin-top: 23px;
     height: 233px;
 }
 
 #logo-container img {
     padding-top: 109px;
+}
+
+form img {
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 6px;
 }
 
 #search-query-field {
@@ -76,9 +83,15 @@ body {
     border-radius: 24px;
     height: 44px;
     width: 584px;
+    padding-left: 40px;
 }
 
 #search-query-field:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#search-query-field:focus {
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     border-color: rgba(223,225,229,0);
 }
@@ -112,6 +125,8 @@ body {
 }
 
 #navbar-bottom {
+    position: absolute;
+    bottom: 0;
     flex: 1;
     width: 100%;
     background: #f2f2f2;
