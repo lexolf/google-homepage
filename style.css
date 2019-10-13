@@ -1,10 +1,26 @@
-body {
+html {
     font-family: Arial, sans-serif;
     font-size: 13px;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column; 
+    align-content: stretch;
+    justify-content: center;
+    height: 100%;
 }
 
 #navbar-top {
-
+    flex-direction: row;
+    justify-content: end;
+    flex: 1;
 }
 
 #navbar-top ul { 
@@ -13,12 +29,128 @@ body {
     list-style-type: none; 
     padding-left: 30px;
     padding-right: 30px;
+    vertical-align: middle;
+    line-height: 40px;
 }
 
 #navbar-top ul li {
     padding-left: 15px;
 }
 
+#apps-logo {
+    vertical-align: middle;
+}
+
+#sign-in-link {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    padding: 0 12px;
+    border-radius: 2px;
+    line-height: 28px;
+    vertical-align: middle;
+}
+
+#main-content {
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #logo-container {
+    margin-top: 89px;
+    height: 233px;
+}
+
+#logo-container img {
     padding-top: 109px;
+}
+
+#search-query-field {
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    width: 584px;
+}
+
+#search-query-field:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+#buttons {
+    padding-top: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#buttons button {
+    display: inline-block;
+    height: 36px;
+    line-height: 27px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: 14px;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+#buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+}
+
+#navbar-bottom {
+    flex: 1;
+    width: 100%;
+    background: #f2f2f2;
+    min-width: 980px;
+    border-top: 1px solid #e4e4e4;
+    font-size: 10pt;
+    display: flex;
+    flex-direction: column;
+}
+
+#country-bar {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 40.5px;
+}
+
+#navbar-bottom-links {
+    height: 41px;
+    display: block;
+}
+
+#left-navbar-bottom li {
+    padding-left: 30px;
+}
+
+#right-navbar-bottom li {
+    padding-right: 30px;
+}
+
+#left-navbar-bottom {
+    display: flex; 
+    list-style-type: none; 
+    float: left;
+    padding: 0;
+}
+
+#right-navbar-bottom {
+    display: flex; 
+    list-style-type: none; 
+    float: right;
 }

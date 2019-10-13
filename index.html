@@ -7,13 +7,13 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div class="container" style="display: grid;">
+        <div class="container">
             <div id="navbar-top">
                 <ul>
                     <li>Gmail</li>
                     <li>Images</li>
-                    <li>{gapps logo}</li>
-                    <li>{avatar}</li>
+                    <li><img id="apps-logo" src="./apps.png" width="16px" height="16px"></li>
+                    <li><span id="sign-in-link">Sign In</span></li>
                 </ul>
             </div>
             <div id="main-content">
@@ -30,24 +30,26 @@
                     </div>
                 </form>
                 <div id="region-suggestion">
-                    Google offered in: <a href="#">русский</a>
+                    Google offered in: <a href="http://google.ru/">русский</a>
                 </div>
             </div>
-            <div id="country-bar" >
-                Russia
-            </div>
-            <div id="navbar-bottom" style="display: flex;">
-                <ul id="left-navbar-bottom" style="display: flex; list-style-type: none; float: right;">
-                    <li>Advertising</li>
-                    <li>Business</li>
-                    <li>About</li>
-                    <li>How Search Works</li>
-                </ul>
-                <ul id="right-navbar-bottom" style="display: flex; list-style-type: none; float: right;">
-                    <li>Privacy</li>
-                    <li>Terms</li>
-                    <li>Settings</li>
-                </ul>
+            <div id="navbar-bottom">
+                <div id="country-bar">
+                    Russia
+                </div>
+                <div id="navbar-bottom-links">
+                    <ul id="left-navbar-bottom">
+                        <li>Advertising</li>
+                        <li>Business</li>
+                        <li>About</li>
+                        <li>How Search Works</li>
+                    </ul>
+                    <ul id="right-navbar-bottom">
+                        <li>Privacy</li>
+                        <li>Terms</li>
+                        <li>Settings</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </body>
