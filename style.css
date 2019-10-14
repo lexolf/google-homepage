@@ -1,5 +1,5 @@
 html {
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     font-size: 13px;
     height: 100%;
     overflow: hidden;
@@ -38,8 +38,24 @@ body {
     padding-left: 15px;
 }
 
+.navbar-top-link {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+
+.navbar-top-link:hover {
+    opacity: 0.85;
+    text-decoration: underline;
+}
+
 #apps-logo {
     vertical-align: middle;
+    opacity: 0.55;
+}
+
+#apps-logo:hover {
+    opacity: 0.85;
+    cursor: pointer;
 }
 
 #sign-in-link {
@@ -52,6 +68,11 @@ body {
     border-radius: 2px;
     line-height: 28px;
     vertical-align: middle;
+}
+
+#sign-in-link:hover {
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    cursor: default;
 }
 
 #main-content {
@@ -101,6 +122,7 @@ form img {
     display: flex;
     width: 100%;
     justify-content: center;
+    height: 70px;
 }
 
 #buttons button {
@@ -122,6 +144,11 @@ form img {
     border: 1px solid #c6c6c6;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     color: #222;
+    cursor: pointer;
+}
+
+#country-link {
+    text-decoration: none;
 }
 
 #navbar-bottom {
@@ -135,6 +162,7 @@ form img {
     font-size: 10pt;
     display: flex;
     flex-direction: column;
+    vertical-align: middle;
 }
 
 #country-bar {
@@ -144,17 +172,43 @@ form img {
     height: 40.5px;
 }
 
+#country-name {
+    display: inline-block;
+    line-height: 40px;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+
 #navbar-bottom-links {
     height: 41px;
     display: block;
 }
 
+#navbar-bottom-links a {
+    color: #5f6368;
+    text-decoration: none;
+}
+
+#navbar-bottom-links a:hover {
+    text-decoration: underline;
+}
+
 #left-navbar-bottom li {
-    padding-left: 30px;
+    padding-left: 27px;
+    color: #5f6368;
+}
+
+#left-navbar-bottom:first-child {
+    padding-left: 3px;
 }
 
 #right-navbar-bottom li {
-    padding-right: 30px;
+    padding-right: 27px;
+    color: #5f6368;
+}
+
+#right-navbar-bottom:last-child {
+    padding-right: 3px;
 }
 
 #left-navbar-bottom {
